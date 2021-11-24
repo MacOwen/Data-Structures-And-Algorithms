@@ -1,4 +1,4 @@
-# Runtime Complexity: O(n^2)
+# Runtime Complexity: O(N^2)
 # Space Complexity: O(1)
 def insertion_sort(arr):
 	N = len(arr)
