@@ -1,11 +1,8 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
-// Runtime Complexity: O(N^2)
-// Space Complexity: O(1)
 void bubble_sort(int arr[], int N) {
 	for (int i = 0; i < N; i++) {
-		for (int j = 1; j < N - i; j++) {
+		for (int j = 1; j < N; j++) {
 			// Swap current element with previous element, if unordered
 			if (arr[j-1] > arr[j]) {
 				int temp = arr[j-1];
@@ -22,18 +19,18 @@ int main() {
 	int N = sizeof(arr) / sizeof(arr[0]);
 
 	// Print elements of unsorted array
-	cout << "Unsorted array:";
+	printf("Unsorted array:");
 	for (int i = 0; i < N; i++)
-		cout << " " << arr[i];
-	cout << endl;
-	
+		printf(" %d", arr[i]);
+	printf("\n");
+
 	bubble_sort(arr, N);
 
 	// Print elements of sorted array
-	cout << "Sorted array:  ";
+	printf("Sorted array:  ");
 	for (int i = 0; i < N; i++)
-		cout << " " << arr[i]; 
-	cout << endl;
+		printf(" %d", arr[i]);
+	printf("\n");
 
 	return 0;
 }
