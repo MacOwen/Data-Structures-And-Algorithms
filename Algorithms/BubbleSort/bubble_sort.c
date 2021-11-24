@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// Runtime Complexity: O(N^2)
+// Space Complexity: O(1)
 void bubble_sort(int arr[], int N) {
 	for (int i = 0; i < N; i++) {
 		for (int j = 1; j < N; j++) {
